@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300&family=Titillium+Web:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+    background-image: url("./imgs/bg-todo-list.jpg");
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    background-repeat: no-repeat; 
+    margin: 5%;
+}
+
+.header-container{
+    color: #e2501d;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.div-image{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#inp-task{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    border: none;
+    
+}
+
+#add-btn{
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 1em;
+    background-color:#8d6d56;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#add-btn:hover{
+    background-color:#705744;
+}
+
+.list-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+ol{
+    list-style-position: inside;
+    position: relative;
+}
+
+ol li:nth-child(odd){
+    background-color: rgb(255, 247, 242);
+}
+
+ol li{
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 239, 228);      
+}
+
+#list li div{
+    position: absolute;
+    right: 10%;
+    
+    transform: translate(-0%, -100%)
+}
+#list li div i{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}
+
+#list li div i:nth-child(2){
+    margin-left: 25px;
+}
+#list li div i:nth-child(1):hover{
+    color: green;
+    scale: 1.2;
+}
+#list li div i:nth-child(2):hover{
+    color: red;
+    scale: 1.2;
+}
+
+
+@media (max-width: 768px) {
+    #inp-task{
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #eee;
+        border: none; 
+    }
+    img{
+        width: 250px;
+    }
+}
